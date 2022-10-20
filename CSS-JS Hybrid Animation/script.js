@@ -1,14 +1,16 @@
-let wingsImg = document.querySelector(".wings");
+let wingsImage = document.querySelector(".wings");
 container.onmouseover = container.onmouseout = handler;
 
 function handler(event) {
 
-  if (event.type == 'mouseover') {
-    wingsImg.style.animationDuration = `1s`;
-    wingsImg.style.animationPlayState = `running`;
-  }
+  
   if (event.type == 'mouseout') {
-    wingsImg.classList.add("stop");
-    wingsImg.style.animationPlayState = `paused`;
+    wingsImage.classList.add("stop");
+    wingsImage.style.animationPlayState = `paused`;
+  }
+  
+  if (event.type == 'mouseover') {
+    wingsImage.style.animationDuration = `2s`;
+    wingsImage.style.animationPlayState = `running`;
   }
 }
